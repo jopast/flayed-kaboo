@@ -2,13 +2,31 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class Controller : MonoBehaviour
 {
-InputAction sluggy;
-private float crawlX;
-private float crawlY;
-private Rigidbody rb;
-private void Start()
+    public float speed = 10.0f;
+    private float crawlX;
+    private float crawlY;
+    private Rigidbody rb;
+    private void Start()
     {
-        sluggy=InputSystem.actions.FindAction("Move");
+        rb = GetComponent<Rigidbody>();
+        if (rb)
+        {
+            Debug.Log("We Slugging.");
+        }
+    }
+
+    private void OnMove(InputValue movementValue)
+    {
+        Vector2 movementVector = movementValue.Get<Vector2>();
+
+        crawlX=movementVector.x;
+        crawlY=movementVector.y;
+    }
+
+    void FixedUpdate()
+    {
+        Vector3 movement = new Vector3(crawlX, 0.0f, crawlY);
+        rb.AddForce(movement * speed);
     }
 }
 
