@@ -3,8 +3,8 @@ using UnityEngine.InputSystem;
 public class Controller : MonoBehaviour
 {
     public float speed = 10.0f;
-    private float crawlX;
-    private float crawlY;
+    public float crawlX;
+    public float crawlY;
     private Rigidbody rb;
     private void Start()
     {
@@ -27,6 +27,10 @@ public class Controller : MonoBehaviour
     {
         Vector3 movement = new Vector3(crawlX, 0.0f, crawlY);
         rb.AddForce(movement * speed);
+
+        
+
     }
+
 }
 
