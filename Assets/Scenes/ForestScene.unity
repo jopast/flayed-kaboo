@@ -6502,7 +6502,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ad615cf0e01e8c4285dd3d42a6eb96d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  player: {fileID: 889165806}
+  target: {fileID: 889165811}
+  orbitSpeed: 3
+  verticalClampMin: -30
+  verticalClampMax: 80
+  distance: 8
+  heightOffset: 2
+  collisionRadius: 0.3
+  collisionPadding: 0.2
+  collisionLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1001 &1199017615
 PrefabInstance:
   m_ObjectHideFlags: 0
