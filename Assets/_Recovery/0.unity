@@ -5429,7 +5429,6 @@ MonoBehaviour:
   speed: 10
   crawlX: 0
   crawlY: 0
-  Cam: {fileID: 1136385242}
 --- !u!114 &889165813
 MonoBehaviour:
   m_ObjectHideFlags: 0
