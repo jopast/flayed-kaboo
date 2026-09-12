@@ -187,6 +187,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1047724519691324, guid: 08f5427fe0d15ad47a5a1bb70b6156c7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1658423233}
+    - targetCorrespondingSourceObject: {fileID: 1047724519691324, guid: 08f5427fe0d15ad47a5a1bb70b6156c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1658423237}
   m_SourcePrefab: {fileID: 100100000, guid: 08f5427fe0d15ad47a5a1bb70b6156c7, type: 3}
 --- !u!1 &275821086
 GameObject:
@@ -1009,6 +1012,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1414035686149406, guid: ebd2497aad4ffde43abb1d9b595d8937, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1305882484}
+    - targetCorrespondingSourceObject: {fileID: 1414035686149406, guid: ebd2497aad4ffde43abb1d9b595d8937, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1305882488}
   m_SourcePrefab: {fileID: 100100000, guid: ebd2497aad4ffde43abb1d9b595d8937, type: 3}
 --- !u!1 &1305882474 stripped
 GameObject:
@@ -1098,6 +1104,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movement
   Goal: {fileID: 889165811}
+--- !u!114 &1305882488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305882474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443dc59c07562a141978c793ba6d0037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ragdoll
+  player: {fileID: 889165806}
 --- !u!1 &1658423223 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1047724519691324, guid: 08f5427fe0d15ad47a5a1bb70b6156c7, type: 3}
@@ -1186,6 +1205,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1658423237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658423223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443dc59c07562a141978c793ba6d0037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ragdoll
+  player: {fileID: 889165806}
 --- !u!1 &2027364436 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1471741602374830, guid: 0814aba0a5f87494cb000251ab82361f, type: 3}
