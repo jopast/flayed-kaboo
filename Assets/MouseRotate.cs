@@ -18,7 +18,7 @@ public class MouseRotate : MonoBehaviour
         var mouse = Mouse.current;
         if (mouse.rightButton.isPressed)
         {
-            Debug.Log("dfiwg");
+            
             transform.Rotate(Vector3.up, -rotationImput.x * rotationspeed, Space.World);
             transform.Rotate(Vector3.right, rotationImput.y* rotationspeed, Space.World);
         }
