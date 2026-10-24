@@ -7,6 +7,8 @@ public class Controller : MonoBehaviour
     public float crawlY;
     public Camera Cam;
     private Rigidbody rb;
+    private float fart=10.0f;
+    private bool ongrond=true;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -24,6 +26,23 @@ public class Controller : MonoBehaviour
         crawlY=movementVector.y;
     }
 
+    private void OnJump(InputValue Hi)
+    {
+        if (Hi.isPressed && ongrond)
+        {
+            rb.AddForce(Vector3.up*fart,ForceMode.Impulse);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        ongrond=true;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        ongrond=false;
+    }
     void FixedUpdate()
     {
         
